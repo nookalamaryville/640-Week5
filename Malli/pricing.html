@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nookala Invoices - pplans and pricing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Menu Section-->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="logo.png"
+                width="125px"
+                alt="Nookala Invoices - Free, Unlimited Invoicing For Your Business"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li>
+                <a href="features.html">Features</a>
+              </li>
+              <li><a href="javascript:void(0)" class="current">Pricing</a></li>
+              <li><a href="userstories.html">User Stories</a></li>
+              <li class="signin-link"><a href="signin.html">Sign In</a></li>
+              <li class="signin-link">
+                <a href="signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="signin.html" class="btn home-singin">SIGN IN</a>&nbsp;&nbsp;
+          <a href="signup.html" class="btn home-singin">SIGN UP NOW</a
+          ><img
+            src="menu.png"
+            alt="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="pricing-heading">
+      <div class="small-container">
+        <div class="row">
+          <h1>
+            Small Business. Simple pricing. Advanced invoicing features.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--- Features section-->
+    <div class="pricing-list">
+      <div class="small-container">
+        <div class="row">
+          <div>
+            <input
+              checked=""
+              type="radio"
+              name="billing_freq"
+              id="monthly"
+              value="monthly"
+            />
+            <label for="monthly">Monthly</label>
+            <input
+              type="radio"
+              name="billing_freq"
+              id="yearly"
+              value="yearly"
+            />
+            <label for="yearly">Yearly</label>
+          </div>
+        </div>
+        <section class="pricing desktop">
+          <table class="simple_view">
+            <thead>
+              <tr>
+                <th class="label settings"></th>
+                <th>
+                  <header>Free</header>
+                  <div class="price"><span>$</span>0.00</div>
+                </th>
+                <th>
+                  <header>Basic</header>
+                  <div class="price">
+                    <span>$</span
+                    ><span
+                      data-price="true"
+                      data-monthly-price="5"
+                      data-yearly-price="4.00"
+                      >5.00</span
+                    >
+                  </div>
+                </th>
+                <th>
+                  <header>Standard</header>
+                  <div class="price">
+                    <span>$</span
+                    ><span
+                      data-price="true"
+                      data-monthly-price="9.0"
+                      data-yearly-price="7.00"
+                      >9.00</span
+                    >
+                  </div>
+                </th>
+                <th>
+                  <header>Enterprise</header>
+                  <div class="price">
+                    <span>$</span
+                    ><span
+                      data-price="true"
+                      data-monthly-price="15.00"
+                      data-yearly-price="13.00"
+                      >15.00</span
+                    >
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="simple">
+              <tr>
+                <td class="label">Unlimited Invoices</td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label light">Estimates (Quotes)</td>
+                <td><img src="close-icon.png" alt="no" class="planno" /></td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Team Members</td>
+                <td>none</td>
+                <td>up to 2</td>
+                <td>up to 10</td>
+                <td>up to 25</td>
+              </tr>
+              <tr>
+                <td class="label light">Track Time, Expenses &amp; Mileage</td>
+                <td><img src="close-icon.png" alt="no" class="planno" /></td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Recurring Statements</td>
+                <td><img src="close-icon.png" alt="no" class="planno" /></td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label light">Bill in any Currency</td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Accept Online Payments</td>
+                <td>PayPal only</td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label light">Multiple Businesses</td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label">Branding</td>
+                <td>Limited</td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+                <td>
+                  <img src="tick-icon.png" alt="checked" class="planyes" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label"></td>
+                <td><a href="signup.html" class="btn">SIGN UP</a></td>
+                <td><a href="signup.html" class="btn">SIGN UP</a></td>
+                <td><a href="signup.html" class="btn">SIGN UP</a></td>
+                <td><a href="signup.html" class="btn">SIGN UP</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="pricing mobile">
+          <div class="column subscription_plans">
+            <ul class="plans">
+              <li class="basic">
+                <div class="upper">
+                  <header>Basic</header>
+                  <div class="price">
+                    <span>$</span>
+                    5.00
+                  </div>
+                </div>
+
+                <div class="features">
+                  <section class="colored team_members">
+                    Up to 2 Team Members
+                  </section>
+                  <section class="estimates">Estimates (Quotes)</section>
+                  <section class="colored recinvoices">
+                    Recurring Invoices
+                  </section>
+                  <section class="cc_payments">Credit Card Payments</section>
+                  <section class="colored track">
+                    Time, Expenses &amp; Mileage
+                  </section>
+                  <section class="branding">Full Business Branding</section>
+                  <section class="mobilesignup">
+                    <a href="signup.html" class="btn">SIGN UP</a>
+                  </section>
+                </div>
+              </li>
+
+              <li class="standard">
+                <div class="upper">
+                  <header>Standard</header>
+                  <div class="price">
+                    <span>$</span>
+                    9.00
+                  </div>
+                </div>
+
+                <div class="features">
+                  <section class="colored team_members">
+                    Up to 10 Team Members
+                  </section>
+                  <section class="estimates">Estimates (Quotes)</section>
+                  <section class="colored recinvoices">
+                    Recurring Invoices
+                  </section>
+                  <section class="cc_payments">Credit Card Payments</section>
+                  <section class="colored track">
+                    Time, Expenses &amp; Mileage
+                  </section>
+                  <section class="branding">Full Business Branding</section>
+                  <section class="mobilesignup">
+                    <a href="signup.html" class="btn">SIGN UP</a>
+                  </section>
+                </div>
+              </li>
+
+              <li class="enterprise">
+                <div class="upper">
+                  <header>Enterprise</header>
+                  <div class="price">
+                    <span>$</span>
+                    15.00
+                  </div>
+                </div>
+
+                <div class="features">
+                  <section class="colored team_members">
+                    Up to 25 Team Members
+                  </section>
+                  <section class="estimates">Estimates (Quotes)</section>
+                  <section class="colored recinvoices">
+                    Recurring Invoices
+                  </section>
+                  <section class="cc_payments">Credit Card Payments</section>
+                  <section class="colored track">
+                    Time, Expenses &amp; Mileage
+                  </section>
+                  <section class="branding">Full Business Branding</section>
+                  <section class="mobilesignup">
+                    <a href="signup.html" class="btn">SIGN UP</a>
+                  </section>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer" role="contentinfo">
+      <div class="container">
+        <p>Copyright 2020 - Nookala Invoices</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="menutoggle.js"></script>
+    <script type="text/javascript">
+      function scrollNavBarToRight() {
+        $(".feature-cotainer").animate({ scrollLeft: 1000 }, 1000);
+      }
+      function scrollNavBarToLeft() {
+        $(".feature-cotainer").animate({ scrollLeft: 0 }, 1000);
+      }
+      $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 500) {
+          $("#feature-nav-bar").addClass("sliding");
+        } else {
+          $("#feature-nav-bar").removeClass("sliding");
+        }
+      });
+      function activateFeature() {
+        $("#feature-navbar>ul>li.active").removeClass("active");
+        $(this).closest("li").addClass("active");
+      }
+    </script>
+  </body>
+</html>

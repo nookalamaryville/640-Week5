@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nookala Invoices - Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Menu Section-->
+    <div class="page-container">
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="logo.png"
+                  width="125px"
+                  alt="Nookala Invoices - Free, Unlimited Invoicing For Your Business"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="request-demo">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <div class="form-container">
+                <form>
+                  <div class="row">
+                    <h2>Sign In to Access Dashboard</h2>
+                  </div>
+                  <div class="row input-display">
+                    <label for="businessemail" class="label"
+                      >Email Address</label
+                    >
+                    <input
+                      type="text"
+                      name="businessemail"
+                      id="businessemail"
+                      class="input-text"
+                      required=""
+                      pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="password" class="label">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <input
+                      type="checkbox"
+                      name="password"
+                      id="password"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row">
+                    <a
+                      href="forgotpassword.html"
+                      style="text-decoration: underline;"
+                      >Forgot Password</a
+                    >
+                    <a href="javascript:void(0);" class="btn">Sign In</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer">
+      <div class="container">
+        <p>Copyright 2020 - Nookala Invoices</p>
+      </div>
+    </div>
+  </body>
+</html>

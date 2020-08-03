@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nookala Invoices - features</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Menu Section-->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="logo.png"
+                width="125px"
+                alt="Nookala Invoices - Free, Unlimited Invoicing For Your Business"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li>
+                <a href="javascript:void(0);" class="current">Features</a>
+              </li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="userstories.html">User Stories</a></li>
+              <li class="signin-link"><a href="signin.html">Sign In</a></li>
+              <li class="signin-link">
+                <a href="signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="signin.html" class="btn home-singin">SIGN IN</a>&nbsp;&nbsp;
+          <a href="signup.html" class="btn home-singin">SIGN UP NOW</a
+          ><img
+            src="menu.png"
+            alt="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="feature-heading">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <h1>Powerful Tools For Your Business</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-nav">
+      <div class="scroll-container" onclick="scrollNavBarToLeft();">
+        <div class="arrow-line-right" style="transform: rotate(180deg);"></div>
+      </div>
+      <div
+        class="scroll-container"
+        style="right: 0;"
+        onclick="scrollNavBarToRight();"
+      >
+        <div class="arrow-line-right"></div>
+      </div>
+      <div class="feature-cotainer" id="feature-navbar">
+        <ul class="mob-nav" role="tablist">
+          <li class="active">
+            <a href="javascript:activateFeature();"
+              ><img src="invoices.svg" alt="" class="logo-icon" />
+              <span>Invoices</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:activateFeature();"
+              ><img src="clients.svg" alt="" class="logo-icon" />
+              <span>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:activateFeature();"
+              ><img src="payments.svg" alt="" class="logo-icon" />
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:activateFeature();"
+              ><img src="reports.svg" alt="" class="logo-icon" />
+              <span>Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:activateFeature();"
+              ><img src="timetrack.svg" alt="" class="logo-icon" />
+              <span>Track Time</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:activateFeature();"
+              ><img
+                src="trackexpenses.svg"
+                alt="track expenses"
+                class="logo-icon"
+              />
+              <span>Track Expenses</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--- Features section-->
+    <div class="features-list">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="invoice-templates.png"
+              alt="brand invoices with templates - nookala invoicess"
+            />
+          </div>
+          <div class="col-2">
+            <h4>Brand your Invoicess</h4>
+            <p>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h4>Autopilot Invoicing</h4>
+            <p>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum.
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              src="recurring-invoice.png"
+              alt="recurring invoices - nookala invoices"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="multilingual-multicurrency-invoice.png"
+              alt="multicurrency and multilingual support - nookala invoices"
+            />
+          </div>
+          <div class="col-2">
+            <h4>Multilingual Currency Support Invoicing</h4>
+            <p>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer" role="contentinfo">
+      <div class="container">
+        <p>Copyright 2020 - Nookala Invoices</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="menutoggle.js"></script>
+    <script type="text/javascript">
+      function scrollNavBarToRight() {
+        $(".feature-cotainer").animate({ scrollLeft: 1000 }, 1000);
+      }
+      function scrollNavBarToLeft() {
+        $(".feature-cotainer").animate({ scrollLeft: 0 }, 1000);
+      }
+      $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 500) {
+          $("#feature-nav-bar").addClass("sliding");
+        } else {
+          $("#feature-nav-bar").removeClass("sliding");
+        }
+      });
+      function activateFeature() {
+        $("#feature-navbar>ul>li.active").removeClass("active");
+        $(this).closest("li").addClass("active");
+      }
+    </script>
+  </body>
+</html>

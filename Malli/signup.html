@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nookala Invoices - Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Menu Section-->
+    <div class="page-container">
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="logo.png"
+                  width="125px"
+                  alt="Nookala Invoices - Free, Unlimited Invoicing For Your Business"
+              /></a>
+            </div>
+            <div class="headerright">
+              Already a membaer? <a href="signin.html" class="btn">SIGN IN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="request-demo">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <div class="form-container">
+                <form>
+                  <div class="row">
+                    <h2>Get your free account!</h2>
+                  </div>
+                  <div class="row input-display">
+                    <label for="companyname" class="label">Company Name</label>
+                    <input
+                      type="text"
+                      name="companyname"
+                      id="companyname"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="businessemail" class="label"
+                      >Business Email</label
+                    >
+                    <input
+                      type="text"
+                      name="businessemail"
+                      id="businessemail"
+                      class="input-text"
+                      required=""
+                      pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="phonenumber" class="label">Phone Number</label>
+                    <input
+                      type="text"
+                      name="phonenumber"
+                      id="phonenumber"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="country" class="label">Country</label>
+                    <select name="country" id="country">
+                      <option value="USA">United States Of America</option>
+                      <option value="Canada">Canada</option>
+                      <option value="India">India</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                    </select>
+                  </div>
+                  <div class="row input-display">
+                    <label for="password" class="label">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row">
+                    <a href="index.html" style="text-decoration: underline;"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn">Create Account</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer">
+      <div class="container">
+        <p>Copyright 2020 - Nookala Invoices</p>
+      </div>
+    </div>
+  </body>
+</html>

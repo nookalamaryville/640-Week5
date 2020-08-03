@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nookala Invoices - Request A Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Menu Section-->
+    <div class="page-container">
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="logo.png"
+                  width="125px"
+                  alt="Nookala Invoices - Free, Unlimited Invoicing For Your Business"
+              /></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li>
+                  <a href="userstories.html">User Stories</a>
+                </li>
+                <li class="signin-link"><a href="signin.html">Sign In</a></li>
+                <li class="signin-link">
+                  <a href="signup.html">Sign Up</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="btn home-singin">SIGN IN</a>&nbsp;&nbsp;
+            <a href="signup.html" class="btn home-singin">SIGN UP NOW</a
+            ><img
+              src="menu.png"
+              alt=""
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="feature-heading">
+        <div class="small-container">
+          <div class="row">
+            <h1>Get A Free Live Demo of NookalaInvoice</h1>
+            <p>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="request-demo">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img
+                src="dashboard-laptop.png"
+                alt="Nookala Invoices"
+                class="dashboardlaptop"
+              />
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                <form>
+                  <div class="row"><h2>Request A Demo</h2></div>
+                  <div class="row">
+                    <div class="col-2 paddingright">
+                      <label for="firstname" class="label">First Name</label>
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        class="input-text"
+                      />
+                    </div>
+                    <div class="col-2">
+                      <label for="lastname" class="label">Last Name</label>
+                      <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        class="input-text"
+                      />
+                    </div>
+                  </div>
+                  <div class="row input-display">
+                    <label for="companyname" class="label">Company Name</label>
+                    <input
+                      type="text"
+                      name="companyname"
+                      id="companyname"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="businessemail" class="label"
+                      >Business Email</label
+                    >
+                    <input
+                      type="text"
+                      name="businessemail"
+                      id="businessemail"
+                      class="input-text"
+                      required=""
+                      pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="phonenumber" class="label">Phone Number</label>
+                    <input
+                      type="text"
+                      name="phonenumber"
+                      id="phonenumber"
+                      class="input-text"
+                    />
+                  </div>
+                  <div class="row input-display">
+                    <label for="country" class="label">Country</label>
+                    <select name="country" id="country">
+                      <option value="USA">United States Of America</option>
+                      <option value="Canada">Canada</option>
+                      <option value="India">India</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <a href="index.html" style="text-decoration: underline;"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn">Request A Demo</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer">
+      <div class="container">
+        <p>Copyright 2020 - Nookala Invoices</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="menutoggle.js"></script>
+  </body>
+</html>
